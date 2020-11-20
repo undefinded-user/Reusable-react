@@ -1,13 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { useContext } from 'react'
+import { GlobalContext } from './Context/GlobalProvider'
 
 function App() {
+  const { data } = useContext(GlobalContext);
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {data[0].name}
         </p>
         <a
           className="App-link"
