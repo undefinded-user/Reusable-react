@@ -1,5 +1,5 @@
 .item-card {
-	width: 300px;
+	width: 330px;
 	position: relative;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .item-card:hover .item-card__container {
-	width: 330px;
+	width: 350px;
 	box-shadow: 0px 0px 10px grey;
 	position: absolute;
 	z-index: 10;
@@ -91,9 +91,19 @@
 
 }
 
-.item-card__dsc span {
-	display: block;
+.item-card__dsc {
+	margin: 0.2em 0 0;
+}
+
+.item-card__price {
+	padding: 0.2em;
 	font-weight: bold;
+
+}
+
+.item-card__prevPrice {
+	text-decoration: line-through;
+	color: grey;
 }
 
 

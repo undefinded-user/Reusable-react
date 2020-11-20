@@ -12,6 +12,7 @@ export default function ItemCard ({data}){
 	})
 	//Format our price variable
 	price = formatter.format(price);
+	if(prevPrice) prevPrice = formatter.format(prevPrice);
 	//Create ouwn state
 	const [isFavorite, setIsFavorite] = useState(false);
 	//Create JSX elements, that will use in conditional rendering
@@ -36,7 +37,9 @@ export default function ItemCard ({data}){
 				<div className='item-card__body'>
 					<img src={img } className='item-card__img' alt={`${name}`}/>
 
-					<p className='item-card__dsc'>{name}<span>{price}</span></p>
+					<p className='item-card__dsc'>{name}</p>
+					<span className='item-card__price'>{price}</span>
+					{prevPrice&&<span className='item-card__prevPrice'>{prevPrice}</span>}
 				</div>
 				<div className='item-card__footer'>
 					<div>
