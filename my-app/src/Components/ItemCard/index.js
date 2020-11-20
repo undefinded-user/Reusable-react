@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './ItemCard.css'
 import img from '../../imgs/iphone12.jpg'
+import { GlobalContext } from '../../Context/GlobalProvider'
+
+
 export default function ItemCard ({data}){
+	const { addItem, basket, addFavorites, removeFavorites, favorites } = useContext(GlobalContext);
 	//Grab information from props
+	console.log(addFavorites);
 	let {isLatest, isBestSeller, price, prevPrice, name} = data;
 	//Function that takes number and return price
 	const formatter = new Intl.NumberFormat('en-US', {
@@ -21,13 +26,22 @@ export default function ItemCard ({data}){
 	const Favorite = <span 
 						className='item-card__dopinfo_favorite item-card__dopinfo'
 						style={{'color': isFavorite? 'hsl(0, 60%, 50%)' : '', 'display': isFavorite? 'inline-block' : ''}}
-						onClick={()=> setIsFavorite(!isFavorite)}
+						onClick={()=>{
+							setIsFavorite(!isFavorite)
+							if(!isFavorite){
+								addFavorites(data)
+							}else{
+								removeFavorites(data)
+							}
+							
+						}}
 
 					 >
 						❤
 					 </span>
 	return (
 		<div className='item-card'>
+			<h1>{basket.length}{favorites.length}</h1>
 			<div className='item-card__container'>
 				<div className='item-card__header'>
 					{isLatest&&Latest}
@@ -43,7 +57,9 @@ export default function ItemCard ({data}){
 				</div>
 				<div className='item-card__footer'>
 					<div>
-						<a className='item-card__ref bold' href='#'>
+						<a className='item-card__ref bold' href='#'
+						   onClick = {()=> addItem(data)}
+						>
 							Buy
 						</a>
 						<a className='item-card__ref' href='#'>
