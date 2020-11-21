@@ -1,0 +1,114 @@
+/*     MOBILE FIRST      */
+.navbar{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--main-color);
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	z-index: 15;
+}
+
+.navbar__content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--main-bg-color);
+}
+
+.navbar.open .navbar__content {
+	display: flex;
+	position: fixed;
+
+}
+
+.navbar__menuBtn {
+	position: fixed;
+	top:0;
+	right:0;
+	z-index: 20;
+	padding: 1.5em;
+}
+
+.navbar__burgerBtn {
+	width: 2em;
+	height: 6px;
+	border-radius: 5px;
+	background-color: var(--main-color);
+}
+
+.navbar__menuBtn:hover {
+	cursor: pointer;
+}
+
+.navbar__burgerBtn::after,
+.navbar__burgerBtn::before {
+	content: '';
+	display: block;
+	width: 2em;
+	height: 6px;
+	background-color: var(--main-color);
+	border-radius: 5px;
+	position: absolute;	
+}
+
+
+
+.navbar__burgerBtn::before {
+	transform: translateY(-10px);
+}
+
+.navbar__burgerBtn::after {
+	transform: translateY(10px);
+}
+
+.navbar__menuBtn:hover .navbar__burgerBtn,
+.navbar__menuBtn:hover .navbar__burgerBtn::after,
+.navbar__menuBtn:hover .navbar__burgerBtn::before{
+	background-color: var(--secondary-color);
+}
+.navbar.open .navbar__burgerBtn{
+	background-color: transparent;
+}
+
+.navbar.open .navbar__burgerBtn::before {
+	transform: translateY(0px) rotate(45deg);
+}
+
+.navbar.open .navbar__burgerBtn::after {
+	transform: translateY(0px) rotate(-45deg);
+}
+
+@media only screen and (min-width: 600px) {
+	.navbar {
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 1.2rem;
+	}
+	.navbar__content {
+		position: unset;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: unset;
+	}
+	.navbar__menuBtn {
+		display: none;
+	}
+	
+}
+
+@media only screen and (min-width: 800px) {
+	.navbar {
+		font-size: 1.5rem;
+	}
+}
+

@@ -1,0 +1,14 @@
+.navbar__item {
+	padding: 1em;
+}
+
+.navbar__item:hover,
+.navbar__item:focus {
+	transform: scale(1.3);
+}
+
+.navbar__item:hover a,
+.navbar__item:focus a{
+	color: var(--secondary-color);
+	transform: scale(1.3);
+}

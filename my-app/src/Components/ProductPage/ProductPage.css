@@ -1,0 +1,17 @@
+.product-page {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+.product-page__container {
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px){
+	
+	.product-page__container {
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+	}
+}
