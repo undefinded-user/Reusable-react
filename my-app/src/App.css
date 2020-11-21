@@ -1,9 +1,7 @@
 .App {
-  position:relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
