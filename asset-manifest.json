@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Reusable-react/static/css/main.6e790042.chunk.css",
+    "main.js": "/Reusable-react/static/js/main.894f196f.chunk.js",
+    "main.js.map": "/Reusable-react/static/js/main.894f196f.chunk.js.map",
+    "runtime-main.js": "/Reusable-react/static/js/runtime-main.acfd3424.js",
+    "runtime-main.js.map": "/Reusable-react/static/js/runtime-main.acfd3424.js.map",
+    "static/js/2.b4de4c76.chunk.js": "/Reusable-react/static/js/2.b4de4c76.chunk.js",
+    "static/js/2.b4de4c76.chunk.js.map": "/Reusable-react/static/js/2.b4de4c76.chunk.js.map",
+    "static/js/3.f01d8e88.chunk.js": "/Reusable-react/static/js/3.f01d8e88.chunk.js",
+    "static/js/3.f01d8e88.chunk.js.map": "/Reusable-react/static/js/3.f01d8e88.chunk.js.map",
+    "index.html": "/Reusable-react/index.html",
+    "static/css/main.6e790042.chunk.css.map": "/Reusable-react/static/css/main.6e790042.chunk.css.map",
+    "static/js/2.b4de4c76.chunk.js.LICENSE.txt": "/Reusable-react/static/js/2.b4de4c76.chunk.js.LICENSE.txt",
+    "static/media/apple-logo.91d504dd.png": "/Reusable-react/static/media/apple-logo.91d504dd.png",
+    "static/media/iphone12.b9fdb50a.jpg": "/Reusable-react/static/media/iphone12.b9fdb50a.jpg",
+    "static/media/logo.103b5fa1.svg": "/Reusable-react/static/media/logo.103b5fa1.svg",
+    "static/media/shopping-cart.88091927.svg": "/Reusable-react/static/media/shopping-cart.88091927.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acfd3424.js",
+    "static/js/2.b4de4c76.chunk.js",
+    "static/css/main.6e790042.chunk.css",
+    "static/js/main.894f196f.chunk.js"
+  ]
+}
