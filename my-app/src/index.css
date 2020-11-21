@@ -16,5 +16,15 @@ code {
 }
 
 a {
+  color: var(--main-color);
 	text-decoration: none;
+}
+
+
+:root {
+  --main-bg-color: white;
+  --secondary-bg-color: hsl(0, 0%, 20%);
+  --main-color: hsl(0, 0%, 60%);
+  --secondary-color: #ff0490;
+  --accent-color: hsl();
 }
