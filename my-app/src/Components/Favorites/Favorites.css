@@ -1,0 +1,26 @@
+.favorites {
+	padding: 0.5em;
+	margin-left: auto;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.favorites__amount {	
+	position: relative;
+	top: 10px;
+	left: -10px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	padding: 0.1em 0.1em 0.2em;
+	background-color: red;
+	border-radius: 50%;
+	font-size: 1rem;
+	color: white;
+}
+
+.favorites:hover {
+	color: var(--secondary-color);
+	cursor: pointer;
+}
