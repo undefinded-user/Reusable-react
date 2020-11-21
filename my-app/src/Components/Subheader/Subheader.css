@@ -1,0 +1,6 @@
+.subheader {
+	display: flex;
+	padding: 0 2em;
+	justify-content: right;
+	background-color: var(--secondary-bg-color);
+}
