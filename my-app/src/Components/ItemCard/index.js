@@ -41,7 +41,6 @@ export default function ItemCard ({data}){
 					 </span>
 	return (
 		<div className='item-card'>
-			<h1>{basket.length}{favorites.length}</h1>
 			<div className='item-card__container'>
 				<div className='item-card__header'>
 					{isLatest&&Latest}
